@@ -7,6 +7,9 @@ import android.widget.ScrollView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.xyz.richtext.richactivity.ForegroundColorActivity;
+import com.xyz.richtext.richactivity.ImageActivity;
+import com.xyz.richtext.richactivity.SizeActivity;
 import com.xyz.richtext.richactivity.StyleActivity;
 import com.xyz.richtext.weight.ClickItemView;
 
@@ -21,9 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
     static {
         map = new LinkedHashMap<>();
-        map.put("设置字体", StyleActivity.class);
-        //        map.put("配置修改(在配置文件中忽略相关配置)", ConfigChangeActivity2.class);
-        //        map.put("权限修改生命周期", PermissionChangeActivity.class);
+        map.put(" 设置字体 StyleSpan ", StyleActivity.class);
+        map.put(" 设置文字颜色 ForegroundColorSpan", ForegroundColorActivity.class);
+        map.put(" 设置文字大小 AbsoluteSizeSpan | RelativeSizeSpan ", SizeActivity.class);
+        map.put(" 设置图片 ImageSpan  ", ImageActivity.class);
     }
 
     @Override

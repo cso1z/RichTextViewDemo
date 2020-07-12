@@ -17,6 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".richactivity.StyleActivity" />
+        <activity android:name=".richactivity.ForegroundColorActivity" />
+        <activity android:name=".richactivity.SizeActivity" />
+        <activity android:name=".richactivity.ImageActivity" />
     </application>
 
 </manifest>

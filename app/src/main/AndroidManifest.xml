@@ -20,6 +20,8 @@
         <activity android:name=".richactivity.ForegroundColorActivity" />
         <activity android:name=".richactivity.SizeActivity" />
         <activity android:name=".richactivity.ImageActivity" />
+        <activity android:name=".richactivity.ClickableActivity" />
+        <activity android:name=".richactivity.UrlActivity" />
     </application>
 
 </manifest>

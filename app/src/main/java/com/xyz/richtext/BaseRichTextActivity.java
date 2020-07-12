@@ -15,10 +15,12 @@ import androidx.annotation.Nullable;
  * created by shenyonghui on 2020/7/9
  */
 public abstract class BaseRichTextActivity extends Activity {
+    public TextView textView;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        TextView textView = new TextView(this);
+        textView = new TextView(this);
         textView.setGravity(Gravity.CENTER);
         textView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
         textView.setText(getText());

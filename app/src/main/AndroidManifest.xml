@@ -22,6 +22,14 @@
         <activity android:name=".richactivity.ImageActivity" />
         <activity android:name=".richactivity.ClickableActivity" />
         <activity android:name=".richactivity.UrlActivity" />
+        <activity android:name=".richactivity.BackgroundColorActivity" />
+        <activity android:name=".richactivity.UnderlineActivity" />
+        <activity android:name=".richactivity.StrikethroughActivity" />
+        <activity android:name=".richactivity.RasterizeActivity" />
+        <activity android:name=".richactivity.SubscriptActivity" />
+        <activity android:name=".richactivity.SuperscriptActivity" />
+        <activity android:name=".richactivity.ScaleXActivity" />
+        <activity android:name=".richactivity.TextAppearanceActivity" />
     </application>
 
 </manifest>

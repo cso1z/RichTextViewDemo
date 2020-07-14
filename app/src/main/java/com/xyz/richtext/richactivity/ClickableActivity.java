@@ -20,6 +20,7 @@ import com.xyz.richtext.BaseRichTextActivity;
 
 /**
  * created by john on 2020/7/12
+ * 设置文本可点击
  */
 public class ClickableActivity extends BaseRichTextActivity {
 

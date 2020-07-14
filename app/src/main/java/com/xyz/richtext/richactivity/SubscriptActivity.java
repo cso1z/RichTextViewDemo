@@ -8,6 +8,7 @@ import com.xyz.richtext.BaseRichTextActivity;
 
 /**
  * created by shenyonghui on 2020/7/13
+ * 下标
  */
 public class SubscriptActivity extends BaseRichTextActivity {
     @Override

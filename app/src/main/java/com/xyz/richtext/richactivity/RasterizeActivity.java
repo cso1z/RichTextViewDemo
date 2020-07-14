@@ -9,6 +9,7 @@ import com.xyz.richtext.BaseRichTextActivity;
 
 /**
  * created by shenyonghui on 2020/7/13
+ * 修饰效果
  */
 public class RasterizeActivity extends BaseRichTextActivity {
     @Override

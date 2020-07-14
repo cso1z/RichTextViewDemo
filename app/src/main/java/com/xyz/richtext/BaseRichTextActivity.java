@@ -23,8 +23,10 @@ public abstract class BaseRichTextActivity extends Activity {
         textView = new TextView(this);
         textView.setGravity(Gravity.CENTER);
         textView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
-        textView.setText(getText());
-        textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, 60);
+        if (getText() != null) {
+            textView.setText(getText());
+        }
+        textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, 80);
         setContentView(textView);
     }
 

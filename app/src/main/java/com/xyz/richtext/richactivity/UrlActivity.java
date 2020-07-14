@@ -16,6 +16,7 @@ import com.xyz.richtext.BaseRichTextActivity;
 
 /**
  * created by john on 2020/7/12
+ * 文本超链接
  */
 public class UrlActivity extends BaseRichTextActivity {
 

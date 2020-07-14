@@ -9,6 +9,7 @@ import com.xyz.richtext.R;
 
 /**
  * created by shenyonghui on 2020/7/13
+ * 文本样式
  */
 public class TextAppearanceActivity extends BaseRichTextActivity {
     @Override

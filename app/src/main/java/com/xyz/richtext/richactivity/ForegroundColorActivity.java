@@ -10,6 +10,7 @@ import com.xyz.richtext.R;
 
 /**
  * created by john on 2020/7/12
+ * 设置文字颜色
  */
 public class ForegroundColorActivity extends BaseRichTextActivity {
     @Override

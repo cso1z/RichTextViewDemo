@@ -8,6 +8,7 @@ import com.xyz.richtext.BaseRichTextActivity;
 
 /**
  * created by shenyonghui on 2020/7/13
+ * 背景色
  */
 public class BackgroundColorActivity extends BaseRichTextActivity {
     @Override

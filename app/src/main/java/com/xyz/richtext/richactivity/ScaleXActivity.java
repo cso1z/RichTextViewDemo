@@ -8,6 +8,7 @@ import com.xyz.richtext.BaseRichTextActivity;
 
 /**
  * created by shenyonghui on 2020/7/13
+ * 基于x轴缩放
  */
 public class ScaleXActivity extends BaseRichTextActivity {
     @Override

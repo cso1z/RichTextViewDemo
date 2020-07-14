@@ -2,7 +2,6 @@ package com.xyz.richtext.richactivity;
 
 import android.graphics.drawable.Drawable;
 import android.text.SpannableString;
-import android.text.style.DynamicDrawableSpan;
 import android.text.style.ImageSpan;
 
 import com.xyz.richtext.BaseRichTextActivity;
@@ -11,6 +10,7 @@ import com.xyz.richtext.richactivity.weight.CenterAlignImageSpan;
 
 /**
  * created by john on 2020/7/12
+ * 设置图片
  */
 public class ImageActivity extends BaseRichTextActivity {
 

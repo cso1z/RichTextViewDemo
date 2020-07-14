@@ -8,6 +8,7 @@ import com.xyz.richtext.BaseRichTextActivity;
 
 /**
  * created by shenyonghui on 2020/7/13
+ * 中划线
  */
 public class StrikethroughActivity extends BaseRichTextActivity {
     @Override

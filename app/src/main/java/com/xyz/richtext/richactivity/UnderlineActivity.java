@@ -1,16 +1,14 @@
 package com.xyz.richtext.richactivity;
 
-import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
-
-import androidx.annotation.Nullable;
 
 import com.xyz.richtext.BaseRichTextActivity;
 
 /**
  * created by shenyonghui on 2020/7/13
+ * 下划线
  */
 public class UnderlineActivity extends BaseRichTextActivity {
 

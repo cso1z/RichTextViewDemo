@@ -2,13 +2,13 @@ package com.xyz.richtext.richactivity;
 
 import android.text.Spannable;
 import android.text.SpannableString;
-import android.text.style.SubscriptSpan;
 import android.text.style.SuperscriptSpan;
 
 import com.xyz.richtext.BaseRichTextActivity;
 
 /**
  * created by shenyonghui on 2020/7/13
+ * 上标
  */
 public class SuperscriptActivity extends BaseRichTextActivity {
     @Override

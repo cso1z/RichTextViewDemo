@@ -30,6 +30,8 @@
         <activity android:name=".richactivity.SuperscriptActivity" />
         <activity android:name=".richactivity.ScaleXActivity" />
         <activity android:name=".richactivity.TextAppearanceActivity" />
+        <activity android:name=".richactivity.FlagsActivity" />
+        <activity android:name=".richactivity.TypefaceActivity" />
     </application>
 
 </manifest>

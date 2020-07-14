@@ -9,6 +9,7 @@ import com.xyz.richtext.BaseRichTextActivity;
 
 /**
  * created by john on 2020/7/12
+ * 设置文字大小
  */
 public class SizeActivity extends BaseRichTextActivity {
     @Override

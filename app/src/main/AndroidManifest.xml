@@ -32,6 +32,8 @@
         <activity android:name=".richactivity.TextAppearanceActivity" />
         <activity android:name=".richactivity.FlagsActivity" />
         <activity android:name=".richactivity.TypefaceActivity" />
+        <activity android:name=".richactivity.AutoLinkActivity" />
+        <activity android:name=".richactivity.HtmlActivity" />
     </application>
 
 </manifest>

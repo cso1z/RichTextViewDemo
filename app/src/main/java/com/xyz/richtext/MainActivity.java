@@ -11,6 +11,7 @@ import com.xyz.richtext.richactivity.BackgroundColorActivity;
 import com.xyz.richtext.richactivity.ClickableActivity;
 import com.xyz.richtext.richactivity.FlagsActivity;
 import com.xyz.richtext.richactivity.ForegroundColorActivity;
+import com.xyz.richtext.richactivity.HtmlActivity;
 import com.xyz.richtext.richactivity.ImageActivity;
 import com.xyz.richtext.richactivity.RasterizeActivity;
 import com.xyz.richtext.richactivity.ScaleXActivity;
@@ -20,6 +21,7 @@ import com.xyz.richtext.richactivity.StyleActivity;
 import com.xyz.richtext.richactivity.SubscriptActivity;
 import com.xyz.richtext.richactivity.SuperscriptActivity;
 import com.xyz.richtext.richactivity.TextAppearanceActivity;
+import com.xyz.richtext.richactivity.AutoLinkActivity;
 import com.xyz.richtext.richactivity.TypefaceActivity;
 import com.xyz.richtext.richactivity.UnderlineActivity;
 import com.xyz.richtext.richactivity.UrlActivity;
@@ -52,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         map.put(" 上标  SuperscriptSpan", SuperscriptActivity.class);
         map.put(" 基于x轴缩放  ScaleXSpan", ScaleXActivity.class);
         map.put(" 文本样式  TextAppearanceSpan", TextAppearanceActivity.class);
+        map.put(" TextView自带的url、电话等样式  AutoLink", AutoLinkActivity.class);
+        map.put(" 使用html改变TextView文字样式  Html", HtmlActivity.class);
     }
 
     @Override

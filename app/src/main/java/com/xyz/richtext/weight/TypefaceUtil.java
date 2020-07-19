@@ -18,8 +18,7 @@ public class TypefaceUtil {
 
     /**
      * @param familyName if start with 'asset:' prefix, then load font from asset folder.
-     * @return
-     */
+x     */
     public static Typeface load(Context context, String familyName, int style) {
         if (familyName != null && familyName.startsWith(PREFIX_ASSET)) {
             synchronized (sCachedFonts) {

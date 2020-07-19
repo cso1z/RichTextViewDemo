@@ -12,21 +12,21 @@ import com.xyz.richtext.R;
 
 /**
  * Created by hebiwen on 2020/7/17.
+ * Sets the autolink mask of the text
  */
 public class AutoLinkActivity extends BaseRichTextActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String text = "<a href=\"http://www.baidu.com\">百度</a> \n\r tel:18007147721";
+        textView.setTextIsSelectable(true);
         textView.setAutoLinkMask(Linkify.ALL);
         textView.setLinkTextColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
         textView.setHighlightColor(ContextCompat.getColor(this, R.color.colorPrimary));
-        textView.setText(text);
     }
 
     @Override
-    public SpannableString getText() {
-        return null;
+    public CharSequence getText() {
+        return "百度: http://www.baidu.com \n tel:18007147721";
     }
 }

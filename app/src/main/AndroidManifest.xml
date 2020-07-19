@@ -25,7 +25,7 @@
         <activity android:name=".richactivity.BackgroundColorActivity" />
         <activity android:name=".richactivity.UnderlineActivity" />
         <activity android:name=".richactivity.StrikethroughActivity" />
-        <activity android:name=".richactivity.RasterizeActivity" />
+        <activity android:name=".richactivity.MaskFilterActivity" />
         <activity android:name=".richactivity.SubscriptActivity" />
         <activity android:name=".richactivity.SuperscriptActivity" />
         <activity android:name=".richactivity.ScaleXActivity" />
@@ -34,6 +34,7 @@
         <activity android:name=".richactivity.TypefaceActivity" />
         <activity android:name=".richactivity.AutoLinkActivity" />
         <activity android:name=".richactivity.HtmlActivity" />
+        <activity android:name=".richactivity.SpannableStringBuilderActivity" />
     </application>
 
 </manifest>

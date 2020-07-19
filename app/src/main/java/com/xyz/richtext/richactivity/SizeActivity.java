@@ -13,7 +13,7 @@ import com.xyz.richtext.BaseRichTextActivity;
  */
 public class SizeActivity extends BaseRichTextActivity {
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String normalText = "这是正常布局中设置的文字大小\n";
         String absoluteText = "这是使用绝对大小 40\n";
         String relativeText = "这是使用相对大小 1.5倍\n";

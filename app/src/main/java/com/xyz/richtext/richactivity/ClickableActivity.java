@@ -38,7 +38,7 @@ public class ClickableActivity extends BaseRichTextActivity {
     }
 
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String text = "这句话中有两个地方可以点击，\n第一个地方是百度，\n另一个地方在这四个字";
         SpannableString spannableString = new SpannableString(text);
         spannableString.setSpan(new Clickable(firstClickListener), text.indexOf("百度"), text.indexOf("，\n另"), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);

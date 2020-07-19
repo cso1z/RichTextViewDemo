@@ -15,7 +15,7 @@ import java.util.Locale;
  */
 public class StyleActivity extends BaseRichTextActivity {
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String textNormal = "这是正常字体文字\n";
         String textBold = "这是加粗字体文字\n";
         String textItalic = "这是斜体字体文字\n";

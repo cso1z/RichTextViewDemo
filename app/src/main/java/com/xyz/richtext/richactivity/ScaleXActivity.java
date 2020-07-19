@@ -12,7 +12,7 @@ import com.xyz.richtext.BaseRichTextActivity;
  */
 public class ScaleXActivity extends BaseRichTextActivity {
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String text = "基于x轴进行缩放";
         SpannableString spannableString = new SpannableString(text);
         spannableString.setSpan(new ScaleXSpan(1.6F), text.length() - 2, text.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

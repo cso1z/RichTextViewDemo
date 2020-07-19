@@ -14,7 +14,7 @@ import com.xyz.richtext.R;
  */
 public class ForegroundColorActivity extends BaseRichTextActivity {
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String normalText = "这是正常布局中设置的颜色文字\n";
         String blueText = "这是蓝色文字\n";
         String redText = "这个红色文字\n";

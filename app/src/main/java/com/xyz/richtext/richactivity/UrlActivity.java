@@ -31,7 +31,7 @@ public class UrlActivity extends BaseRichTextActivity {
     }
 
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         SpannableString ss = new SpannableString("谷歌");
         ss.setSpan(new Url("http://www.baidu.com"), 0, 2, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         return ss;

@@ -12,7 +12,7 @@ import com.xyz.richtext.BaseRichTextActivity;
  */
 public class StrikethroughActivity extends BaseRichTextActivity {
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String text = "如果想注释某些不需要的文字，\n可以使用中划线";
         SpannableString spannableString = new SpannableString(text);
         spannableString.setSpan(new StrikethroughSpan(), text.length() - 3, text.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

@@ -25,7 +25,7 @@ import org.xml.sax.XMLReader;
  */
 public class HtmlActivity extends BaseRichTextActivity {
 
-        private String html = "<a href=\"http://www.baidu.com\">百度</a>"
+    private String html = "<a href=\"http://www.baidu.com\">百度</a>"
             + " <a href=\"tel:13007147721\">13007147721</a>"
             + " <h1>H 1标题<h1>"
             + " <h2>H 2标题<h2>"
@@ -77,7 +77,7 @@ public class HtmlActivity extends BaseRichTextActivity {
     }
 
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         return null;
     }
 }

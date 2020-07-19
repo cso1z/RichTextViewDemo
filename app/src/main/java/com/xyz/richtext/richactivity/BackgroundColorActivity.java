@@ -12,7 +12,7 @@ import com.xyz.richtext.BaseRichTextActivity;
  */
 public class BackgroundColorActivity extends BaseRichTextActivity {
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String text = "这个字背景是蓝色的,\n这个字背景是红色的";
         SpannableString spannableString = new SpannableString(text);
         spannableString.setSpan(new BackgroundColorSpan(0xff00ddff), 6, 8, Spannable.SPAN_INCLUSIVE_INCLUSIVE);

@@ -13,7 +13,7 @@ import com.xyz.richtext.BaseRichTextActivity;
 public class UnderlineActivity extends BaseRichTextActivity {
 
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String text = "下面这句话是重点，\n记得划线";
         SpannableString spannableString = new SpannableString(text);
         spannableString.setSpan(new UnderlineSpan(), text.length() - 4, text.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

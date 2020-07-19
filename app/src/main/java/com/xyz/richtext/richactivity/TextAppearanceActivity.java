@@ -13,7 +13,7 @@ import com.xyz.richtext.R;
  */
 public class TextAppearanceActivity extends BaseRichTextActivity {
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String text = "文本外貌是什么样式";
         SpannableString spannableString = new SpannableString(text);
         spannableString.setSpan(new TextAppearanceSpan(this, R.style.style_black), text.length() - 2, text.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

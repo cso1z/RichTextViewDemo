@@ -21,7 +21,7 @@ import com.xyz.richtext.weight.TypefaceUtil;
 public class TypefaceActivity extends BaseRichTextActivity {
 
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
 
         SpannableString customText0 = new SpannableString("这是自定义字体1\n");
@@ -45,8 +45,7 @@ public class TypefaceActivity extends BaseRichTextActivity {
         TypefaceSpan sansSerif = new TypefaceSpan("sans-serif");
         sansSerifText.setSpan(sansSerif, 0, sansSerifText.length(), Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
 
-        textView.setText(spannableStringBuilder.append(customText0).append(customText1).append(monospaceText).append(serifText).append(sansSerifText));
-        return null;
+        return spannableStringBuilder.append(customText0).append(customText1).append(monospaceText).append(serifText).append(sansSerifText);
     }
 
 

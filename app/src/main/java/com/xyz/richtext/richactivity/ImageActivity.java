@@ -15,7 +15,7 @@ import com.xyz.richtext.richactivity.weight.CenterAlignImageSpan;
 public class ImageActivity extends BaseRichTextActivity {
 
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String normalImageText = "这是正常在首部加图片\n";
         String centerImageText = "这是在首部加居中图片";
         String text = normalImageText + centerImageText;

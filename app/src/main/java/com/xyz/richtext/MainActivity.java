@@ -13,9 +13,10 @@ import com.xyz.richtext.richactivity.FlagsActivity;
 import com.xyz.richtext.richactivity.ForegroundColorActivity;
 import com.xyz.richtext.richactivity.HtmlActivity;
 import com.xyz.richtext.richactivity.ImageActivity;
-import com.xyz.richtext.richactivity.RasterizeActivity;
+import com.xyz.richtext.richactivity.MaskFilterActivity;
 import com.xyz.richtext.richactivity.ScaleXActivity;
 import com.xyz.richtext.richactivity.SizeActivity;
+import com.xyz.richtext.richactivity.SpannableStringBuilderActivity;
 import com.xyz.richtext.richactivity.StrikethroughActivity;
 import com.xyz.richtext.richactivity.StyleActivity;
 import com.xyz.richtext.richactivity.SubscriptActivity;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     static {
         map = new LinkedHashMap<>();
+        map.put("SpannableStringBuilder", SpannableStringBuilderActivity.class);
         map.put("flags 参数说明", FlagsActivity.class);
         map.put(" 设置字体 StyleSpan", StyleActivity.class);
         map.put(" 文本字体 TypefaceSpan", TypefaceActivity.class);
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         map.put(" 背景色  BackgroundColorSpan", BackgroundColorActivity.class);
         map.put(" 下划线  UnderlineSpan", UnderlineActivity.class);
         map.put(" 中划线  StrikethroughSpan", StrikethroughActivity.class);
-        map.put(" 修饰效果  MaskFilterSpan", RasterizeActivity.class);
+        map.put(" 修饰效果  MaskFilterSpan", MaskFilterActivity.class);
         map.put(" 下标  SubscriptSpan", SubscriptActivity.class);
         map.put(" 上标  SuperscriptSpan", SuperscriptActivity.class);
         map.put(" 基于x轴缩放  ScaleXSpan", ScaleXActivity.class);

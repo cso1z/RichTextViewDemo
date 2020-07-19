@@ -23,12 +23,18 @@ public abstract class BaseRichTextActivity extends Activity {
         textView = new TextView(this);
         textView.setGravity(Gravity.CENTER);
         textView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
-        if (getText() != null) {
-            textView.setText(getText());
-        }
+
         textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, 80);
         setContentView(textView);
     }
 
-    public abstract SpannableString getText();
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (getText() != null) {
+            textView.setText(getText());
+        }
+    }
+
+    public abstract CharSequence getText();
 }

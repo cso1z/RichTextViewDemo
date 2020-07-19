@@ -12,7 +12,7 @@ import com.xyz.richtext.BaseRichTextActivity;
  */
 public class SuperscriptActivity extends BaseRichTextActivity {
     @Override
-    public SpannableString getText() {
+    public CharSequence getText() {
         String text = "上标标:通常在数学公式中使用,例如:\nx2-x1-2=0";
         SpannableString spannableString = new SpannableString(text);
         spannableString.setSpan(new SuperscriptSpan(), text.indexOf("1"), text.indexOf("1") + 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

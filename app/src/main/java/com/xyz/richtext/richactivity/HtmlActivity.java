@@ -9,6 +9,8 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ImageSpan;
+import android.text.style.StrikethroughSpan;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
@@ -17,6 +19,9 @@ import androidx.core.content.ContextCompat;
 import com.xyz.richtext.BaseRichTextActivity;
 import com.xyz.richtext.R;
 import com.xyz.richtext.richactivity.weight.CenterAlignImageSpan;
+import com.xyz.richtext.richactivity.weight.CustomerTagHandler;
+import com.xyz.richtext.richactivity.weight.CustomerTagHandler_1;
+import com.xyz.richtext.richactivity.weight.HtmlParser;
 
 import org.xml.sax.XMLReader;
 
@@ -38,9 +43,22 @@ public class HtmlActivity extends BaseRichTextActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        textView.setText(Html.fromHtml(html, null, new MTagHandler()));
-        textView.setMovementMethod(LinkMovementMethod.getInstance());
+//        textView.setText(Html.fromHtml(html, null, new MTagHandler()));
+//        textView.setMovementMethod(LinkMovementMethod.getInstance());
+        String htmlStr = "<font style=\"color:#ff6c00;font-size:18px\"> 1500/天</font> <font style=\"TEXT-DECORATION: line-through;" +
+                "color:#808080;font-size:10px\">原价:20000元 </font>";
+
+        String htmlStr_1 = "<font color='#ff6c00' size='20'> 1500/天</font> <del><font  color='#808080' size='12'>原价:20000元 </font></del>";
+
+        String htmlStr_2 = "<font color='#ff6c00' size='4'> 1500/天</font> <strike><font  color='#808080' size='2'>原价:20000元 </font></strike>";
+
+        String htmlStr_3 = "<font color='#ff6c00'> <size value='20'>1500/天</size></font> <del><font  color='#808080'><size value='12'>原价:20000元</size> </font></del>";
+
+//                textView.setText(Html.fromHtml(htmlStr_3,null, new CustomerTagHandler()));
+//
+        textView.setText(HtmlParser.buildSpannedText(htmlStr_1,new CustomerTagHandler_1()));
     }
+
 
     /**
      * 可以用来实现TextView、EditText中获取表情图片
